@@ -12,6 +12,7 @@
 		F865D365250C403F007D76DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F865D363250C403F007D76DE /* Main.storyboard */; };
 		F865D367250C4040007D76DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F865D366250C4040007D76DE /* Assets.xcassets */; };
 		F865D36A250C4040007D76DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F865D368250C4040007D76DE /* LaunchScreen.storyboard */; };
+		F865D372250C42CB007D76DE /* CountriesTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F865D371250C42CB007D76DE /* CountriesTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F865D366250C4040007D76DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F865D369250C4040007D76DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F865D36B250C4040007D76DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F865D371250C42CB007D76DE /* CountriesTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F865D35D250C403F007D76DE /* AppDelegate.swift */,
 				F865D35F250C403F007D76DE /* SceneDelegate.swift */,
 				F865D363250C403F007D76DE /* Main.storyboard */,
+				F865D371250C42CB007D76DE /* CountriesTableTableViewController.swift */,
 				F865D366250C4040007D76DE /* Assets.xcassets */,
 				F865D368250C4040007D76DE /* LaunchScreen.storyboard */,
 				F865D36B250C4040007D76DE /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F865D35E250C403F007D76DE /* AppDelegate.swift in Sources */,
+				F865D372250C42CB007D76DE /* CountriesTableTableViewController.swift in Sources */,
 				F865D360250C403F007D76DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
