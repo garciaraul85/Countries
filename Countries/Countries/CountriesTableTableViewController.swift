@@ -7,6 +7,12 @@
 
 import UIKit
 
+class CountryTableViewCell: UITableViewCell {
+    @IBOutlet weak var countryTitleLabel: UILabel!
+    @IBOutlet weak var countryTextLabel: UILabel!
+    @IBOutlet weak var countryImageView: UIImageView!
+}
+
 class CountriesTableTableViewController: UITableViewController {
     let countries = [
         Country(isoCode: "at", name: "Austria"),
@@ -34,13 +40,13 @@ class CountriesTableTableViewController: UITableViewController {
 
     // Configure cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as! CountryTableViewCell
 
+        // Customize the controller code in tableView(cellForRowAt:) to make use of the new cell class and its properties:
         let country = countries[indexPath.row]
-        cell.textLabel?.text = country.name
-        // show a detail text and an image (all cells have an optional imageView that is created when the property is accessed):
-        cell.detailTextLabel?.text = country.isoCode
-        cell.imageView?.image = UIImage(named: country.isoCode)
+        cell.countryTitleLabel?.text = country.name
+        cell.countryTextLabel?.text = country.isoCode
+        cell.countryImageView?.image = UIImage(named: country.isoCode)
 
         return cell
     }
