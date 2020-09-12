@@ -38,6 +38,9 @@ class CountriesTableTableViewController: UITableViewController {
 
         let country = countries[indexPath.row]
         cell.textLabel?.text = country.name
+        // show a detail text and an image (all cells have an optional imageView that is created when the property is accessed):
+        cell.detailTextLabel?.text = country.isoCode
+        cell.imageView?.image = UIImage(named: country.isoCode)
 
         return cell
     }
